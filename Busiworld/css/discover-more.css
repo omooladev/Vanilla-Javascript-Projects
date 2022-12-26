@@ -1,0 +1,68 @@
+/*section1 */
+#discover-more {
+  background-color: oldlace;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  width: 100%;
+}
+#discover-more #discover-more_text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+#discover-more #discover-more_text h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+#discover-more
+  #discover-more_text
+  #discover-more_button {
+  width: 150px;
+  transition: all 0.5s;
+  border-radius: 0.4rem;
+}
+
+#discover-more #discover-more_banner {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#discover-more #discover-more_banner img {
+  width: 100%;
+}
+@media (min-width: 500px) {
+  #discover-more #discover-more_banner img {
+    width: 400px;
+  }
+}
+@media (min-width: 700px) {
+  #discover-more #discover-more_text {
+    width: 50%;
+    align-items: flex-start;
+  }
+  #discover-more #discover-more_text h2 {
+    text-align: left;
+  }
+  #discover-more
+    #discover-more_text
+    #discover-more_button {
+    width: 50%;
+    transition: all 0.5s;
+    border-radius: 0.4rem;
+  }
+  #discover-more
+    #discover-more_text
+    #discover-more_button:hover {
+    transition: all 0.5s;
+    background-color: rgb(116, 29, 21);
+  }
+  #discover-more #discover-more_banner {
+    width: 50%;
+  }
+}

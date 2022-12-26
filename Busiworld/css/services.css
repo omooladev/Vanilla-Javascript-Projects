@@ -1,0 +1,82 @@
+#services {
+  width: 100%;
+  padding: 20px 0;
+  background-color: white;
+}
+#services #our-services {
+  height: auto;
+  text-align: center;
+  padding: 2rem 5%;
+  background-color: white;
+}
+#services #our-services p {
+  font-size: 1rem;
+  color: grey;
+}
+#services #our-services h2 {
+  font-size: 1.7rem;
+  color: black;
+  font-weight: 600;
+}
+
+#the-services {
+  padding: 2rem 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgb(233, 222, 222);
+}
+
+#the-services .service {
+  background-color: white;
+  height: 300px;
+  border: 3px solid white;
+  box-shadow: red;
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+}
+
+#the-services .service h3 {
+  transition: 0.5s ease-in;
+  transition-delay: 200ms;
+}
+#the-services .service p {
+  transition: 0.5s ease-in;
+  transition-delay: 400ms;
+}
+
+@media (min-width: 500px) {
+  #the-services .service {
+    width: 30rem;
+  }
+  #the-services .service:hover {
+    background-color: rgb(229, 112, 112);
+    transition: 0.5s ease-in;
+    border-color: rgb(11, 4, 55);
+  }
+  #the-services .service:hover h3 {
+    color: white;
+    transition: 0.5s ease-in;
+    transition-delay: 400ms;
+  }
+  #the-services .service:hover p {
+    color: white;
+    transition: 0.5s ease-in;
+    transition-delay: 200ms;
+  }
+}
+
+@media (min-width: 700px) {
+  #the-services .service {
+    width: 15rem;
+  }
+}
