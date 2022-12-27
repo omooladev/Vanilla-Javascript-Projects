@@ -5,6 +5,7 @@
 @import url(./experience.css);
 @import url(./project.css);
 @import url(./portfolio.css);
+@import url(./footer.css);
 * {
   margin: 0px;
   padding: 0px;
@@ -405,11 +406,4 @@ li {
   padding-bottom: 10px;
 }
 
-footer {
-  color: white;
-  padding: 10px 0px;
-  text-align: center;
-}
-.footer-class {
-  color: red;
-}
+
