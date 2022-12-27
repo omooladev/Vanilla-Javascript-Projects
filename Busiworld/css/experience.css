@@ -1,0 +1,65 @@
+.experience {
+  height: auto;
+}
+
+.experience .experience-image {
+  width: 100%;
+  overflow: hidden;
+}
+.experience .experience-image img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  height: 50vh;
+  object-fit: cover;
+  object-position: center;
+}
+.experience h1 {
+  color: grey;
+  font-size: 20px;
+}
+.experience h6 {
+  color: red;
+}
+.experience p {
+  font-size: 12px;
+  color: grey;
+}
+.experience-text {
+  align-self: center;
+  text-align: center;
+}
+
+.experience .experience-text button {
+  width: 50%;
+  display: block;
+  margin: 20px auto;
+}
+
+@media (min-width: 500px) {
+  .experience .experience-image img {
+    width: 400px;
+  }
+}
+@media (min-width: 700px) {
+  .experience {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .experience .experience-image {
+    padding: 1rem;
+    width: 50%;
+  }
+  .experience .experience-text {
+    width: 50%;
+    padding: 1rem;
+    text-align: left;
+  }
+  .experience .experience-text button {
+    width: 15rem;
+    margin: 20px 0;
+  }
+}

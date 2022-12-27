@@ -13,7 +13,6 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: black;
   margin: 0px;
   padding: 0px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -49,44 +48,11 @@ li {
   padding: 10px;
   margin-top: 20px;
 }
-.buttons:active {
+.buttons:hover {
   background-color: rgb(143, 71, 71);
 }
 
 /*Section-4*/
-#experience {
-  height: auto;
-  padding: 20px 0px;
-  background-color: wheat;
-}
-#sect-4 {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  background-color: wheat;
-  overflow: hidden;
-}
-#experience img {
-  width: 180px;
-}
-#img-1 {
-  background-color: wheat;
-  width: 190px;
-  margin-left: 39px;
-}
-#experience h1 {
-  color: grey;
-  font-size: 20px;
-}
-#experience h6 {
-  color: red;
-}
-#experience p {
-  font-size: 12px;
-  color: grey;
-}
-#experience-div {
-  align-self: center;
-}
 
 /*Section-5*/
 #project {
