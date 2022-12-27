@@ -33,3 +33,19 @@
 #the-services .service:nth-child(6) {
   transition-delay: 1000ms;
 }
+
+.project
+  .projects-boxes
+  .project-box:nth-child(2) {
+  transition-delay: 200ms;
+}
+.project
+  .projects-boxes
+  .project-box:nth-child(3) {
+  transition-delay: 400ms;
+}
+.project
+  .projects-boxes
+  .project-box:nth-child(4) {
+  transition-delay: 600ms;
+}

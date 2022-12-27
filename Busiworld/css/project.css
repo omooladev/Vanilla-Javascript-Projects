@@ -1,0 +1,53 @@
+.project {
+  background-color: black;
+}
+.project h2 {
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+}
+.project #project-paragraph {
+  font-size: 0.8rem;
+  color: rgb(228, 216, 216);
+  text-align: center;
+  padding: 0.4rem 0;
+}
+.project .projects-boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.project .projects-boxes .project-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0.5rem;
+  background-color: white;
+  height: 5rem;
+  overflow: hidden;
+}
+
+.project-box p {
+  color: black;
+  font-size: 10px;
+}
+#success-project {
+  color: red;
+}
+
+@media (min-width: 500px) {
+  .project .projects-boxes .project-box {
+    width: 30rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .project .projects-boxes .project-box {
+    width: 15rem;
+  }
+}
