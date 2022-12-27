@@ -69,3 +69,41 @@
   .port-box:nth-child(5) {
   transition-delay: 800ms;
 }
+.team-members__box.hidden {
+  scale: 0;
+  transition: 0.5s all;
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.team-members__box.show {
+  scale: 1;
+  opacity: 1;
+  transform: translateX(0%);
+  transition: 0.5s all;
+}
+
+.team-members__box:nth-child(2) {
+  transition-delay: 200ms;
+}
+.team-members__box:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+.pricing-box.hidden {
+  transition: 0.5s all;
+  opacity: 0;
+  transform: translateX(100%);
+}
+.pricing-box.show {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: 0.5s all;
+}
+
+.pricing-box:nth-child(2) {
+  transition-delay: 200ms;
+}
+.pricing-box:nth-child(3) {
+  transition-delay: 400ms;
+}

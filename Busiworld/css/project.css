@@ -1,6 +1,10 @@
 .project {
   background-color: black;
 }
+#project {
+  width: 100%;
+  padding: 20px 5%;
+}
 .project h2 {
   font-size: 1.2rem;
   color: white;

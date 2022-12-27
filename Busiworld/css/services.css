@@ -1,7 +1,9 @@
 .services {
+  background-color: white;
+}
+#services {
   width: 100%;
   padding: 20px 0;
-  background-color: white;
 }
 .services .our-services {
   height: auto;

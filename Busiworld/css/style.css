@@ -5,7 +5,9 @@
 @import url(./experience.css);
 @import url(./project.css);
 @import url(./portfolio.css);
+@import url(./team-members.css);
 @import url(./footer.css);
+@import url(./pricing.css);
 * {
   margin: 0px;
   padding: 0px;
@@ -55,170 +57,8 @@ li {
   background-color: rgb(143, 71, 71);
 }
 
-/*Section-4*/
-
-/*Section-5*/
-
-/*Section-6*/
-
-
-/*Section-7*/
-#team-members {
-  background-color: wheat;
-  padding: 30px 0px;
-}
-.team {
-  width: 80%;
-  margin: auto;
-}
-.team-1 {
-  margin: auto;
-  text-align: center;
-  padding-bottom: 10px;
-}
-#team-2 {
-  width: 80%;
-  margin: auto;
-  background-color: red;
-}
-.team-box {
-  background-color: wheat;
-  display: flex;
-  flex-direction: column;
-}
-.team-box-1 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 1.2rem;
-  justify-content: right;
-}
-.b11 {
-  height: 200px;
-  background-image: url("../images/wole1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding-top: 10px;
-}
-.b12 {
-  height: 200px;
-  background-image: url("../images/wole2.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding-top: 10px;
-}
-.b13 {
-  height: 200px;
-  background-image: url("../images/wole3.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding-top: 10px;
-}
-.agent {
-  text-align: center;
-  background-color: wheat;
-  padding-top: 10px;
-}
 /*Section-8*/
-#pricing {
-  background-color: white;
-  padding: 50px 0px;
-}
-#price-1 p {
-  text-align: center;
-  font-size: 0.8rem;
-  color: grey;
-}
-#price-1 h2 {
-  text-align: center;
-}
-#pricing-boxes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  background-color: white;
-  width: 80%;
-  margin: auto;
-  padding: 20px 0px;
-  gap: 1rem;
-  justify-content: space-around;
-}
-.pricing-box {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  border: 2px solid grey;
-}
-#basic {
-  padding-top: 10px;
-  background-color: wheat;
-  width: 100%;
-  text-align: center;
-  height: 10vh;
-  border-bottom-left-radius: 30px;
-  border-color: white;
-}
-.under {
-  background-color: white;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  row-gap: 0.8rem;
-  text-align: center;
-  padding: 5px 0px;
-  padding-bottom: 20px;
-}
-.under-sub {
-  width: 50%;
-  margin: auto;
-  padding: 10px 0px;
-  color: red;
-  background-color: transparent;
-  border-color: red;
-  cursor: pointer;
-}
-.under-sub:hover {
-  border-color: blue;
-}
-#m {
-  text-align: center;
-}
 
-#basic-part2 {
-  background-color: rgb(243, 9, 9);
-  padding-top: 10px;
-  width: 100%;
-  text-align: center;
-  height: 10vh;
-  border-bottom-left-radius: 30px;
-  border-color: white;
-  color: rgb(236, 228, 228);
-}
-.part2 {
-  background-color: red;
-}
-.under-part2 {
-  background-color: red;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  row-gap: 0.8rem;
-  text-align: center;
-  padding: 5px 0px;
-  color: rgb(236, 228, 228);
-}
-.sub2 {
-  background-color: white;
-}
-
-.price {
-  font-weight: bold;
-  font-size: 20px;
-}
-.pricea {
-  font-weight: bold;
-  font-size: 20px;
-  color: white;
-}
 /*Section-9*/
 #blog {
   background-color: rgb(233, 222, 222);
@@ -405,5 +245,3 @@ li {
 .di {
   padding-bottom: 10px;
 }
-
-

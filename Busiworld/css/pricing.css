@@ -1,0 +1,70 @@
+#pricing {
+  background-color: white;
+  padding: 20px 5%;
+
+  width: 100%;
+}
+.pricing-text {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.pricing-text p {
+  color: grey;
+}
+.pricing-boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  height: auto;
+}
+.pricing-boxes .pricing-box {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 2px solid grey;
+  height: 40vh;
+  margin: 0.5rem;
+  width: 100%;
+  align-items: center;
+}
+.pricing-box-header {
+  background-color: pink;
+  text-align: center;
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.pricing-box-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  height: 35vh;
+  padding: 1rem 0;
+}
+.pricing-box-body p {
+  font-weight: 500;
+}
+
+/* .pricing-box:nth-child(2) {
+  background-color: rgb(223, 98, 98);
+} */
+
+@media (min-width: 500px) {
+  .pricing-boxes .pricing-box {
+    width: 30rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .pricing-boxes .pricing-box {
+    width: 15rem;
+  }
+}

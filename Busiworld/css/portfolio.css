@@ -1,6 +1,7 @@
 .portfolio {
   background-color: white;
 }
+
 .portfolio .portfolio-text {
   text-align: center;
   padding: 1rem 0;
@@ -9,7 +10,6 @@
   color: grey;
 }
 .portfolio .portfolio-text h2 {
-  font-size: 20px;
   padding-bottom: 30px;
 }
 .portfolio .portfolio-boxes {

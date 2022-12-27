@@ -48,7 +48,7 @@
   .menu:checked
   ~ .navigation-list {
   left: 0%;
-  width: 100vw;
+  width: 70vw;
 }
 header .navigation .navigation-list .nav-links {
   list-style: none;
