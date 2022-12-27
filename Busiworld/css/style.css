@@ -4,6 +4,7 @@
 @import url(./scroll-animation.css);
 @import url(./experience.css);
 @import url(./project.css);
+@import url(./portfolio.css);
 * {
   margin: 0px;
   padding: 0px;
@@ -58,81 +59,7 @@ li {
 /*Section-5*/
 
 /*Section-6*/
-#portfolio {
-  background-color: white;
-  padding: 20px 0px;
-  height: auto;
-}
-.po {
-  text-align: center;
-}
-.p {
-  color: grey;
-}
-.h2 {
-  font-size: 20px;
-  padding-bottom: 30px;
-}
-.port-boxes {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1rem;
-}
-.port-box {
-  height: 210px;
-}
 
-.a1 {
-  background-image: url("../images/design.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.a2 {
-  background-image: url("../images/hack1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.a3 {
-  background-image: url("../images/programmer.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.a4 {
-  background-image: url("../images/python.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-.a4 h3 {
-  font-size: 14px;
-  color: white;
-  padding-left: 10px;
-}
-.a4 p {
-  font-size: 12px;
-  color: white;
-  padding-left: 10px;
-}
-.a44 {
-  height: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: center;
-}
-
-.a5 {
-  background-image: url("../images/software.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
 
 /*Section-7*/
 #team-members {
