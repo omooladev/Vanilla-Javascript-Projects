@@ -107,3 +107,10 @@
 .pricing-box:nth-child(3) {
   transition-delay: 400ms;
 }
+
+.blog-box:nth-child(2) {
+  transition-delay: 200ms;
+}
+.blog-box:nth-child(3) {
+  transition-delay: 400ms;
+}
