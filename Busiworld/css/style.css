@@ -16,26 +16,56 @@
   box-sizing: border-box;
 }
 
+:root {
+  --body-color: white;
+  /* NAVIGATION COLOR */
+  --nav-background-color: oldlace;
+  --sticky-nav-background-color: rgb(211, 42, 42);
+  --nav-text-color: black;
+  --sticky-nav-text-color: white;
+  /* nav links */
+  --nav-link-color: rgb(68, 115, 225);
+  --nav-link-background-color: rgb(165, 10, 10);
+  --white-section-color: white;
+  --oldlace-section-color: oldlace;
+
+  /* --nav-color:,
+  --sidebar-color:,
+  --text-color:, */
+}
+body.dark {
+  --body-color: #18191a;
+  /* NAVIGATION COLOR */
+  --nav-background-color: #242526;
+  --sticky-nav-background-color: #242526;
+  --nav-text-color: #ccc;
+  --sticky-nav-text-color: #ccc;
+  /* nav links */
+  --side-nav: #242526;
+  --text-color: #ccc;
+
+  --white-section-color: #18191a;
+  --oldlace-section-color: #18191a;
+}
+
 html {
   scroll-behavior: smooth;
 }
 body {
-  margin: 0px;
-  padding: 0px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  line-height: 1.5;
-  position: relative;
+  background-color: var(--body-color);
 }
+
 .main {
   position: relative;
-  padding-top: 15vh;
+  padding-top: 10vh;
 }
 /*global*/
-.container {
+/* .container {
   width: 90%;
   margin: 0 auto;
   padding: 20px 0;
-}
+} */
 
 a {
   text-decoration: none;
@@ -58,4 +88,3 @@ li {
 .buttons:hover {
   background-color: rgb(143, 71, 71);
 }
-

@@ -1,10 +1,10 @@
 #discover-more {
-  background-color: oldlace;
+  background-color: var(--oldlace-section-color);
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
   width: 100%;
-  padding: 0 5%;
+  padding: 20px 5%;
 }
 #discover-more #discover-more_text {
   width: 100%;

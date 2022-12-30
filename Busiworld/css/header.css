@@ -2,18 +2,20 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  z-index: 999;
-  height: 15vh;
-  background-color: oldlace;
   overflow: hidden;
+  width: 100%;
+  height: 10vh;
+  z-index: 999;
   display: flex;
   align-items: center;
   justify-content: space-between;
   transition: all 0.4s ease;
+  background-color: var(--nav-background-color);
 }
 .header.sticky {
-  background-color: rgb(211, 42, 42);
+  background-color: var(
+    --sticky-nav-background-color
+  );
 }
 .header .navigation {
   width: 90%;
@@ -23,21 +25,25 @@
   flex-direction: column;
   align-items: flex-start;
 }
-.header.sticky .logo h1 {
-  color: white;
-}
 .header .navigation .logo h1 {
   font-size: 1.5rem;
+  color: var(--nav-text-color);
 }
+.header.sticky .navigation .logo h1 {
+  color: var(--sticky-nav-text-color);
+}
+
 .header .navigation .navigation-list {
   display: flex;
   flex-direction: column;
   position: fixed;
   height: 85vh;
-  top: 15vh;
+  top: 10vh;
   left: -100%;
   width: 0vw;
-  background-color: rgb(165, 10, 10);
+  background-color: var(
+    --nav-link-background-color
+  );
   overflow: hidden;
   align-items: center;
   padding: 20px 0;
@@ -147,7 +153,54 @@ header .navigation .navigation-list .nav-links {
   transform: rotate(-315deg) translateY(-0.5rem)
     translateX(-0.5rem);
 }
-@media (min-width: 600px) {
+
+.darkLight-searchBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.darkLight,
+.searchBox {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+.darkLight i,
+.searchBox i {
+  cursor: pointer;
+  position: absolute;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  color: var(--nav-text-color);
+}
+
+.darkLight .moon {
+  opacity: 1;
+  pointer-events: all;
+}
+.darkLight .sun,
+.searchBox .cancel {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.darkLight.active .sun {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.darkLight.active .moon {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* @media (min-width: 1000px) {
   .header
     .navigation
     .menu:checked
@@ -155,9 +208,9 @@ header .navigation .navigation-list .nav-links {
     left: 0%;
     width: 50vw;
   }
-}
+} */
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
   .header .navigation .mobile-menu {
     display: none;
   }
@@ -168,6 +221,7 @@ header .navigation .navigation-list .nav-links {
     align-items: center;
     justify-content: space-between;
   }
+
   .header .navigation .navigation-list {
     position: static;
     align-items: center;
@@ -179,8 +233,8 @@ header .navigation .navigation-list .nav-links {
     padding: 0;
   }
   header .navigation .navigation-list .nav-links {
-    color: #0e2431;
     margin: 0 5px;
+    padding: 0.8rem 0;
   }
   .header.sticky
     .navigation
@@ -194,7 +248,7 @@ header .navigation .navigation-list .nav-links {
     .navigation-list
     .nav-links
     a {
-    color: rgb(81, 2, 2);
+    color: var(--nav-link-color);
     padding: 8px 10px;
   }
 
@@ -211,8 +265,10 @@ header .navigation .navigation-list .nav-links {
     .navigation-list
     .nav-links
     a.active {
-    background-color: rgb(211, 42, 42);
-    color: white;
+    background-color: var(
+      --nav-link-background-color
+    );
+    color: var(--nav-link-color);
   }
 
   .header.sticky
@@ -228,7 +284,9 @@ header .navigation .navigation-list .nav-links {
     .navigation-list
     .nav-links
     a:hover {
-    background-color: rgb(211, 42, 42);
-    color: white;
+    background-color: var(
+      --nav-link-background-color
+    );
+    color: var(--nav-link-color);
   }
 }
