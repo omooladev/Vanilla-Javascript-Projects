@@ -13,6 +13,7 @@
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  color: var(--nav-text-color);
 }
 #discover-more #discover-more_text h2 {
   text-align: center;

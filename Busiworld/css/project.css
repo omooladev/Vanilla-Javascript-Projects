@@ -1,6 +1,9 @@
 .project {
   background-color: black;
 }
+body.dark .project {
+  background-color: var(--body-color);
+}
 #project {
   width: 100%;
   padding: 20px 5%;
@@ -36,9 +39,22 @@
   overflow: hidden;
 }
 
+body.dark .project .projects-boxes .project-box {
+  background-color: var(--nav-background-color);
+  color: var(--nav-text-color);
+}
+
 .project-box p {
   color: black;
   font-size: 10px;
+  padding: 0.5rem 0;
+}
+body.dark
+  .project
+  .projects-boxes
+  .project-box
+  p {
+  color: var(--nav-text-color);
 }
 #success-project {
   color: red;

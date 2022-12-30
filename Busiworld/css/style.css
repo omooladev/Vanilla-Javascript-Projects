@@ -1,7 +1,6 @@
 @import url(./header.css);
 @import url(./discover-more.css);
 @import url(./services.css);
-@import url(./scroll-animation.css);
 @import url(./experience.css);
 @import url(./project.css);
 @import url(./portfolio.css);
@@ -9,6 +8,7 @@
 @import url(./pricing.css);
 @import url(./blog.css);
 @import url(./footer.css);
+@import url(./scroll-animation.css);
 
 * {
   margin: 0px;
@@ -38,6 +38,13 @@
     10
   );
   --sticky-nav-link-active-background-color: white;
+  /* SERVICES SECTION */
+  --our-service-background-color: white;
+  --the-service-background-color: rgb(
+    233,
+    222,
+    222
+  );
   --white-section-color: white;
   --oldlace-section-color: oldlace;
 
@@ -59,7 +66,9 @@ body.dark {
   --sticky-nav-link-color: #ccc;
   --sticky-nav-link-active-color: #242526;
   --sticky-nav-link-active-background-color: #ccc;
-
+  /* SERVICES SECTION */
+  --our-service-background-color: #242526;
+  --the-service-background-color: #18191a;
   --side-nav: #242526;
   --text-color: #ccc;
 
@@ -80,14 +89,15 @@ body {
   padding-top: 10vh;
 }
 /*global*/
-/* .container {
+.container {
   width: 90%;
   margin: 0 auto;
   padding: 20px 0;
-} */
+}
 
 a {
   text-decoration: none;
+  color: orange;
 }
 li {
   list-style: none;

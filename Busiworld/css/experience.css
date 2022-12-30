@@ -1,5 +1,8 @@
-.experience {
+#experience {
   height: auto;
+  background-color: var(--nav-background-color);
+  width: 100%;
+  padding:20px 5%
 }
 
 .experience .experience-image {
@@ -17,13 +20,16 @@
 .experience h1 {
   color: grey;
   font-size: 20px;
+  padding: 0.5rem 0;
 }
 .experience h6 {
   color: red;
+   padding: 0.5rem 0;
 }
 .experience p {
   font-size: 12px;
   color: grey;
+   padding: 0.5rem 0;
 }
 .experience-text {
   align-self: center;

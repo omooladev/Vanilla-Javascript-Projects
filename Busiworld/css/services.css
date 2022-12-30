@@ -1,15 +1,17 @@
-.services {
-  background-color: white;
-}
 #services {
   width: 100%;
-  padding: 20px 0;
+  padding: 0;
+  background-color: var(
+    --our-service-background-color
+  );
 }
 .services .our-services {
   height: auto;
   text-align: center;
   padding: 2rem 5%;
-  background-color: white;
+  background-color: var(
+    --our-service-background-color
+  );
 }
 .services .our-services p {
   font-size: 1rem;
@@ -17,7 +19,7 @@
 }
 .services .our-services h2 {
   font-size: 1.7rem;
-  color: black;
+  color: var(--nav-text-color);
   font-weight: 600;
 }
 
@@ -27,7 +29,9 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: rgb(233, 222, 222);
+  background-color: var(
+    --the-service-background-color
+  );
 }
 
 .the-services .service {
@@ -46,15 +50,21 @@
   cursor: pointer;
   transition: 0.5s ease-in;
   padding: 0 0.5rem;
+  background-color: var(
+    --our-service-background-color
+  );
+  color: var(--nav-text-color);
 }
-
-.the-services .service h3 {
-  transition: 0.5s ease-in;
-  transition-delay: 200ms;
-}
+.the-services .service h3,
 .the-services .service p {
-  transition: 0.5s ease-in;
-  transition-delay: 400ms;
+  padding: 0.5rem 0;
+}
+.the-services .service a {
+  padding: 0.5rem 0;
+  color: rgb(211, 42, 42);
+}
+body.dark .the-services .service a {
+  color: orange;
 }
 
 @media (min-width: 500px) {
@@ -62,19 +72,15 @@
     width: 30rem;
   }
   .the-services .service:hover {
-    background-color: rgb(229, 112, 112);
+    background-color: var(
+      --nav-link-active-background-color
+    );
+    color: var(--nav-link-active-color);
     transition: 0.5s ease-in;
     border-color: rgb(11, 4, 55);
   }
-  .the-services .service:hover h3 {
-    color: white;
-    transition: 0.5s ease-in;
-    transition-delay: 400ms;
-  }
-  .the-services .service:hover p {
-    color: white;
-    transition: 0.5s ease-in;
-    transition-delay: 200ms;
+  body.dark .the-services .service:hover a {
+    color: rgb(254, 48, 1);
   }
 }
 
