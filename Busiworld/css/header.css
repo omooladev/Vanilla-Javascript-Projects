@@ -179,6 +179,10 @@ header .navigation .navigation-list .nav-links {
   transition: all 0.3s ease;
   color: var(--nav-text-color);
 }
+.header.sticky .darkLight i,
+.header.sticky .searchBox i {
+  color: var(--sticky-nav-text-color);
+}
 
 .darkLight .moon {
   opacity: 1;
@@ -241,7 +245,7 @@ header .navigation .navigation-list .nav-links {
     .navigation-list
     .nav-links
     a {
-    color: white;
+    color: var(--sticky-nav-link-color);
   }
   .header
     .navigation
@@ -257,8 +261,10 @@ header .navigation .navigation-list .nav-links {
     .navigation-list
     .nav-links
     a.active {
-    background-color: white;
-    color: rgb(211, 42, 42);
+    background-color: var(
+      --sticky-nav-link-active-background-color
+    );
+    color: var(--sticky-nav-link-active-color);
   }
   .header
     .navigation
@@ -266,9 +272,9 @@ header .navigation .navigation-list .nav-links {
     .nav-links
     a.active {
     background-color: var(
-      --nav-link-background-color
+      --nav-link-active-background-color
     );
-    color: var(--nav-link-color);
+    color: var(--nav-link-active-color);
   }
 
   .header.sticky
@@ -276,8 +282,10 @@ header .navigation .navigation-list .nav-links {
     .navigation-list
     .nav-links
     a:hover {
-    background-color: white;
-    color: rgb(211, 42, 42);
+    background-color: var(
+      --sticky-nav-link-active-background-color
+    );
+    color: var(--sticky-nav-link-active-color);
   }
   .header
     .navigation
@@ -285,8 +293,8 @@ header .navigation .navigation-list .nav-links {
     .nav-links
     a:hover {
     background-color: var(
-      --nav-link-background-color
+      --nav-link-active-background-color
     );
-    color: var(--nav-link-color);
+    color: var(--nav-link-active-color);
   }
 }

@@ -24,8 +24,20 @@
   --nav-text-color: black;
   --sticky-nav-text-color: white;
   /* nav links */
-  --nav-link-color: rgb(68, 115, 225);
-  --nav-link-background-color: rgb(165, 10, 10);
+  --nav-link-color: black;
+  --nav-link-active-color: white;
+  --nav-link-active-background-color: rgb(
+    165,
+    10,
+    10
+  );
+  --sticky-nav-link-color: white;
+  --sticky-nav-link-active-color: rgb(
+    165,
+    10,
+    10
+  );
+  --sticky-nav-link-active-background-color: white;
   --white-section-color: white;
   --oldlace-section-color: oldlace;
 
@@ -41,6 +53,13 @@ body.dark {
   --nav-text-color: #ccc;
   --sticky-nav-text-color: #ccc;
   /* nav links */
+  --nav-link-color: #ccc;
+  --nav-link-active-color: #242526;
+  --nav-link-active-background-color: #ccc;
+  --sticky-nav-link-color: #ccc;
+  --sticky-nav-link-active-color: #242526;
+  --sticky-nav-link-active-background-color: #ccc;
+
   --side-nav: #242526;
   --text-color: #ccc;
 
