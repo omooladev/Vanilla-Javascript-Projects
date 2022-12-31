@@ -169,6 +169,9 @@ header .navigation .navigation-list .nav-links {
   justify-content: center;
   margin: 0 5px;
   transition: all 0.3s ease;
+  /*TODO REMOVE THIS */
+  background-color: red; 
+  
 }
 
 .darkLight i,
@@ -178,6 +181,7 @@ header .navigation .navigation-list .nav-links {
   font-size: 20px;
   transition: all 0.3s ease;
   color: var(--nav-text-color);
+  
 }
 .header.sticky .darkLight i,
 .header.sticky .searchBox i {
