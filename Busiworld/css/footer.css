@@ -1,13 +1,16 @@
 .footer {
   color: white;
   text-align: center;
-  background-color: rgb(211, 42, 42);
 }
 
-.footer-first-section {
+.footer .footer-first-section {
   background-color: black;
   padding: 20px 5%;
 }
+body.dark .footer .footer-first-section {
+  background-color: var(--nav-background-color);
+}
+
 .footer-first-section .last-1 {
   text-align: center;
 }
@@ -20,6 +23,7 @@
 }
 .footer-first-section__header p {
   color: rgb(210, 26, 26);
+  padding: 10px 0;
 }
 .footer-first-section__header form {
   display: flex;
@@ -43,6 +47,14 @@
     sans-serif;
   margin: 0.5rem;
 }
+
+body.dark
+  .footer-first-section__header
+  form
+  input {
+  background-color: black;
+  background-color: var(--body-color);
+}
 .footer-first-section__header form button {
   margin: 0.5rem;
 }
@@ -63,6 +75,7 @@
   justify-content: center;
   padding: 50px 0;
 }
+
 .footer-first-section__body-box {
   display: flex;
   flex-direction: column;
@@ -85,9 +98,17 @@
   padding: 10px 0;
 }
 
+body.dark .footer-first-section__body-box p {
+  color: var(--nav-text-color);
+}
+
 .footer-last-section {
   padding: 20px 5%;
   background-color: rgb(211, 42, 42);
+}
+
+body.dark .footer-last-section {
+  background-color: var(--body-color);
 }
 .footer-last-section .designer {
   color: white;
