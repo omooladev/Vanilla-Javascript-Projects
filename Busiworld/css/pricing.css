@@ -1,15 +1,21 @@
 #pricing {
   background-color: white;
   padding: 20px 5%;
-
   width: 100%;
+}
+body.dark #pricing {
+  background-color: var(--nav-background-color);
 }
 .pricing-text {
   text-align: center;
   padding-bottom: 20px;
 }
+.pricing-text h2 {
+  color: var(--nav-text-color);
+}
 .pricing-text p {
   color: grey;
+  padding: 10px 0;
 }
 .pricing-boxes {
   display: flex;
@@ -29,6 +35,10 @@
   width: 100%;
   align-items: center;
 }
+
+body.dark .pricing-boxes .pricing-box {
+  background-color: var(--nav-text-color);
+}
 .pricing-box-header {
   background-color: pink;
   text-align: center;
@@ -38,6 +48,11 @@
   align-items: center;
   justify-content: center;
   position: relative;
+}
+
+body.dark .pricing-box-header {
+  background-color: var(--body-color);
+  color: var(--nav-text-color);
 }
 
 .pricing-box-body {
@@ -51,6 +66,10 @@
 }
 .pricing-box-body p {
   font-weight: 500;
+}
+
+body.dark .pricing-box-body p {
+  color: var(--body-color);
 }
 
 /* .pricing-box:nth-child(2) {
