@@ -4,10 +4,19 @@
   padding: 20px 5%;
 }
 
+body.dark #team-members {
+  background-color: var(--body-color);
+}
 .team-members__text {
   margin: auto;
   text-align: center;
   padding-bottom: 20px;
+  color: var(--nav-text-color);
+}
+
+.team-members__text p {
+  color: grey;
+  padding: 10px 0;
 }
 .team-members__boxes {
   display: flex;
@@ -22,6 +31,10 @@
   flex-direction: column;
   margin: 0.5rem;
   width: 100%;
+  padding-bottom: 10px;
+}
+body.dark .team-members__box {
+  background-color: var(--nav-text-color);
 }
 .box-image {
   height: 300px;
@@ -47,7 +60,6 @@
 }
 .agent {
   text-align: center;
-  background-color: wheat;
   padding-top: 10px;
 }
 
