@@ -26,25 +26,13 @@
   /* nav links */
   --nav-link-color: black;
   --nav-link-active-color: white;
-  --nav-link-active-background-color: rgb(
-    165,
-    10,
-    10
-  );
+  --nav-link-active-background-color: rgb(165, 10, 10);
   --sticky-nav-link-color: white;
-  --sticky-nav-link-active-color: rgb(
-    165,
-    10,
-    10
-  );
+  --sticky-nav-link-active-color: rgb(165, 10, 10);
   --sticky-nav-link-active-background-color: white;
   /* SERVICES SECTION */
   --our-service-background-color: white;
-  --the-service-background-color: rgb(
-    233,
-    222,
-    222
-  );
+  --the-service-background-color: rgb(233, 222, 222);
   --white-section-color: white;
   --oldlace-section-color: oldlace;
 
@@ -83,7 +71,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: var(--body-color);
 }
 
