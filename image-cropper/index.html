@@ -1,0 +1,26 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crop Image</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/cropperjs@1.5.12/dist/cropper.css" />
+    <script src="https://unpkg.com/cropperjs@1.5.12/dist/cropper.js" defer></script>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="modal_overlay"></div>
+      <h1>Crop Image</h1>
+      <div class="image_container">
+        <form action="">
+          <input type="file" accept="image/*" class="new_image" />
+        </form>
+
+        <div class="preview_image_container">
+          <img src="" alt="" id="preview_image" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
