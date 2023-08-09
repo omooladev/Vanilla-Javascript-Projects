@@ -1,5 +1,5 @@
 let cropper;
-const createCropper = async (image, { aspectRatio = 0, viewMode = 3 }) => {
+const createCropper = async ({ image, aspectRatio = 0, viewMode = 3 }) => {
   cropper = new Cropper(image, {
     aspectRatio,
     viewMode,

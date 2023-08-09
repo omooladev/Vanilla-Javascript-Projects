@@ -1,4 +1,4 @@
-import { destroyCropper } from "../../js/cropper.js";
+import { destroyCropper } from "../cropper.js";
 export const closeImageContainer = (event) => {
   event.stopPropagation();
   if (!previewImageContainer.className.includes("show")) {

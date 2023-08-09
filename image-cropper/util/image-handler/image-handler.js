@@ -1,11 +1,8 @@
 import { setError } from "../../js/lib/setError.js";
 import { setIsLoading } from "../../js/lib/setIsLoading.js";
 import { validateImage } from "../image-validator.js";
-import { createCropper } from "../../js/cropper.js";
+import { createCropper } from "../cropper.js";
 
-const previewImageContainer = document.querySelector(".preview_image_container");
-const previewImage = document.querySelector("#preview_image");
-const modalOverlay = document.querySelector(".modal_overlay");
 const transformImageHandler = async (event) => {
   //----------> reset error
   setError("");
@@ -25,7 +22,7 @@ const transformImageHandler = async (event) => {
   fileReader.readAsDataURL(image);
   fileReader.onloadend = async () => {
     previewImage.src = fileReader.result;
-    await createCropper(previewImage);
+    await createCropper({ image: previewImage });
     setIsLoading(false);
 
     //----------> show the preview image container

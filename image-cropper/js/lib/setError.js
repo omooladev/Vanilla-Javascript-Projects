@@ -1,4 +1,4 @@
-const reply = document.querySelector(".reply");
+
 export const setError = (message) => {
   if (!message) {
     reply.innerHTML = "";
