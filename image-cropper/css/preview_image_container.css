@@ -1,0 +1,83 @@
+.container .main .preview_image_container {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: #242526;
+  padding: 1rem 0rem;
+  background-color: black;
+  border-radius: 1rem;
+  overflow: hidden;
+  z-index: 1000;
+}
+.container .main .preview_image_container.show {
+  display: block;
+}
+
+.container .main .preview_image_container .image_preview_container {
+  background-color: #242526;
+  padding: 1rem 1.5rem;
+}
+
+/* for image to be cropped */
+.container .main .preview_image_container .image_preview_container .image_border {
+  width: 410px;
+  border: 5px solid rgb(120, 177, 200);
+  margin: 0 auto;
+}
+.container .main .preview_image_container .image_preview_container .image_border .crop_container {
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+}
+.container .main .preview_image_container .image_preview_container .crop_container.hide {
+  display: none;
+}
+.container .main .preview_image_container .image_preview_container .crop_container img {
+  display: block;
+  max-width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+/* for image to already cropped */
+.container .main .preview_image_container .image_preview_container .cropped_image_container {
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+}
+.container .main .preview_image_container .image_preview_container .cropped_image_container.hide {
+  display: none;
+}
+.container .main .preview_image_container .image_preview_container .cropped_image_container img {
+  display: block;
+  max-width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+/* styling the actions */
+
+.container .main .preview_image_container .actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 1rem;
+  padding-bottom: 1rem;
+}
+.container .main .preview_image_container .actions button.save,
+.container .main .preview_image_container .actions button.edit {
+  display: block;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  justify-items: right;
+}
+
+.container .main .preview_image_container .actions button.save.hide,
+.container .main .preview_image_container .actions button.edit.hide {
+  display: none;
+}

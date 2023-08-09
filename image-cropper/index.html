@@ -10,36 +10,35 @@
     <script src="/js/app.js" type="module" defer></script>
   </head>
   <body>
-    <div class="container">
+    <section class="container">
       <div class="modal_overlay"></div>
       <h1>Crop Image</h1>
-      <div class="image_container">
-        <form action="">
+      <main class="main">
+        <form>
           <input type="file" accept="image/*" class="new_image" />
         </form>
-        <p class="reply">Not an image file</p>
+        <p class="reply"></p>
         <div class="loader">
           <div class="spinner-3"></div>
         </div>
-
-        <div class="preview_image_container">
-          <div class="action">
+        <section class="preview_image_container">
+          <div class="actions">
             <button class="save">Save</button>
-            <button class="edit">Edit</button>
+            <button class="edit hide">Edit</button>
           </div>
           <hr />
-          <div class="image">
+          <div class="image_preview_container">
             <div class="image_border">
               <div class="crop_container">
                 <img src="" alt="" id="preview_image" />
               </div>
-              <div class="cropped_image_container">
-                <img src="" alt="" id="cropped_image_preview" />
-              </div>
+            </div>
+            <div class="cropped_image_container hide">
+              <img src="" alt="" id="cropped_image_preview" />
             </div>
           </div>
-        </div>
-      </div>
-    </div>
+        </section>
+      </main>
+    </section>
   </body>
 </html>

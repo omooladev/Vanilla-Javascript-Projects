@@ -1,3 +1,7 @@
+@import url("./loader.css");
+@import url("./modal_overlay.css");
+@import url("./form.css");
+@import url("./preview_image_container.css");
 * {
   margin: 0;
   padding: 0;
@@ -25,148 +29,32 @@ body {
   width: 100%;
   text-align: center;
 }
-.container .image_container {
+/* .container .main {
   width: 100%;
   text-align: center;
-}
-.container .image_container form {
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+} */
 
-.container .image_container form input {
-  color: white;
-  margin: 0.5rem 0;
-  font-size: 1.2rem;
-}
-
-.container .image_container {
+.container .main {
   margin: 1rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.container .image_container .preview_image_container {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  overflow: hidden;
-  display: none;
-  border-radius: 1rem;
-  z-index: 1000;
-  background-color: #242526;
-  padding: 1rem 0rem;
-  background-color: black;
-  width: 600px;
-}
-.container .image_container .preview_image_container.show {
-  display: block;
-}
-.container .image_container .preview_image_container .action {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 0 1rem;
-  padding-bottom: 1rem;
-}
-.container .image_container .preview_image_container button.save {
-  cursor: pointer;
-  background-color: white;
-  border-radius: 1rem;
-  padding: 0.5rem 1rem;
-  justify-items: right;
-}
 
-.container .image_container .preview_image_container .image {
-  background-color: #242526;
-  padding: 1rem 1.5rem;
-}
-.container .image_container .preview_image_container .image .image_border {
-  width: 410px;
-  border: 5px solid rgb(120, 177, 200);
-  margin: 0 auto;
-}
-.container .image_container .preview_image_container .image .crop_container {
-  width: 400px;
-  margin: 0 auto;
-  display: block;
-}
-.container .image_container .preview_image_container .image .crop_container.hide {
+/* styling replies */
+.container .main .reply {
   display: none;
-}
-.container .image_container .preview_image_container .image .crop_container img {
-  display: block;
-  max-width: 100%;
-  max-height: 500px;
-  object-fit: cover;
-}
-.container .image_container .preview_image_container .image .cropped_image_container {
-  display: none;
-  width: 400px;
-  margin: 0 auto;
-}
-.container .image_container .preview_image_container .image .cropped_image_container.show {
-  display: block;
-}
-.container .image_container .preview_image_container .image .cropped_image_container.show img {
-  display: block;
-  max-width: 100%;
-  max-height: 500px;
-  object-fit: cover;
-}
-
-.container .modal_overlay {
-  position: absolute;
-  background-color: #18191a;
-  height: 100vh;
-  width: 100vw;
-  z-index: 999;
-  display: none;
-  opacity: 0.8;
-}
-.container .modal_overlay.show {
-  display: block;
-}
-.container .image_container .reply {
-  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
   width: 100%;
   max-width: 25rem;
   padding: 0.5rem 0.6rem;
   margin: 1rem 0;
-  font-size: 1.2rem;
-  display: none;
-  font-weight: bold;
+  border-radius: 0.5rem;
 }
-.container .image_container .reply.error {
+.container .main .reply.error {
   display: block;
-  color: white;
   background-color: rgb(232, 191, 191);
   color: red;
-}
-.container .image_container .loader {
-  display: none;
-  margin: 2rem 0;
-}
-.container .image_container .loader.loading {
-  display: block;
-}
-.container .image_container .loader .spinner-3 {
-  width: 50px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: radial-gradient(farthest-side, rgb(120, 177, 200) 94%, #0000) top/8px 8px no-repeat,
-    conic-gradient(#0000 30%, rgb(120, 177, 200));
-  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
-  animation: s3 1s infinite linear;
-}
-
-@keyframes s3 {
-  100% {
-    transform: rotate(1turn);
-  }
 }

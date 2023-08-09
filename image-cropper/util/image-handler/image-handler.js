@@ -12,10 +12,10 @@ const transformImageHandler = async (event) => {
   const image = event.target.files[0];
 
   //----------> validate image
-  const response = await validateImage(image);
-  if (response.hasError) {
+  const validationResponse = await validateImage(image);
+  if (validationResponse.hasError) {
     setIsLoading(false);
-    return setError(response.errorMessage);
+    return setError(validationResponse.errorMessage);
   }
 
   const fileReader = new FileReader();
