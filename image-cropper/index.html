@@ -2,11 +2,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Crop Image</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Image Cropper</title>
+    <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/cropperjs@1.5.12/dist/cropper.css" />
     <script src="https://unpkg.com/cropperjs@1.5.12/dist/cropper.js" defer></script>
-    <script src="index.js" defer></script>
+    <script src="/js/index.js" type="module" defer></script>
   </head>
   <body>
     <div class="container">
@@ -24,11 +24,17 @@
         <div class="preview_image_container">
           <div class="action">
             <button class="save">Save</button>
+            <button class="edit">Edit</button>
           </div>
           <hr />
           <div class="image">
             <div class="image_border">
-              <div class="crop_container"><img src="" alt="" id="preview_image" /></div>
+              <div class="crop_container">
+                <img src="" alt="" id="preview_image" />
+              </div>
+              <div class="cropped_image_container">
+                <img src="" alt="" id="cropped_image_preview" />
+              </div>
             </div>
           </div>
         </div>
