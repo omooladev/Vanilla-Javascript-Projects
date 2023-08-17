@@ -12,3 +12,4 @@ const reply = document.querySelector(".reply");
 const loader = document.querySelector(".loader");
 const saveButton = document.querySelector(".save");
 const editButton = document.querySelector(".edit");
+const downloadButton = document.querySelector(".download");

@@ -3,6 +3,7 @@ import { closeImageContainer } from "../util/image-handler/close-image-container
 import {
   saveCroppedImageHandler,
   editCroppedImageHandler,
+  downloadCroppedImageHandler,
 } from "../util/image-handler/crop-image.js";
 //----------> event listeners
 
@@ -12,3 +13,4 @@ modalOverlay.onclick = (event) => closeImageContainer(event);
 
 editButton.onclick = (event) => editCroppedImageHandler(event);
 saveButton.onclick = (event) => saveCroppedImageHandler(event);
+downloadButton.onclick = (event) => downloadCroppedImageHandler(event);

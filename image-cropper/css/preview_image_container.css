@@ -86,7 +86,7 @@
   padding: 0 1rem;
   padding-bottom: 1rem;
 }
-.container .main .preview_image_container .actions button.download,
+.container .main .preview_image_container .actions a.download,
 .container .main .preview_image_container .actions button.save,
 .container .main .preview_image_container .actions button.edit {
   display: block;
@@ -97,18 +97,16 @@
   outline: none;
   border: none;
 }
-.container .main .preview_image_container .actions button.download {
-  color: white;
-  background-color: rgb(120, 177, 200);
-}
 
 .container .main .preview_image_container .actions button.save.hide,
-.container .main .preview_image_container .actions button.edit.hide {
+.container .main .preview_image_container .actions button.edit.hide,
+.container .main .preview_image_container .actions a.download.hide {
   display: none;
 }
 
 .container .main .preview_image_container .actions button.save:disabled,
-.container .main .preview_image_container .actions button.edit:disabled {
+.container .main .preview_image_container .actions button.edit:disabled,
+.container .main .preview_image_container .actions a.download:disabled {
   cursor: not-allowed;
   background-color: #eee;
 }
@@ -118,7 +116,13 @@
   padding-top: 1rem;
   justify-content: center;
 }
-.container .main .preview_image_container .actions button.download {
+.container .main .preview_image_container .actions a.download {
   font-size: 1rem;
   border-radius: 0.5rem;
+  color: white;
+  background-color: rgb(120, 177, 200);
+}
+.container .main .preview_image_container .actions a.download:disabled {
+  cursor: not-allowed;
+  background-color: rgba(120, 177, 200, 0.5);
 }
