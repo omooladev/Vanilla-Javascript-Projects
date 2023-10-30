@@ -41,7 +41,7 @@ body.dark .team-members__box {
 }
 
 .team-members__box-image1 {
-  background-image: url("../images/team-member1.jpg");
+  background-image: url("../images/team-member1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -53,7 +53,7 @@ body.dark .team-members__box {
   background-position: center;
 }
 .team-members__box-image3 {
-  background-image: url("../images/team-member3.jpg");
+  background-image: url("../images/team-member3.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

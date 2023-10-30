@@ -3,9 +3,13 @@ export const saveCroppedImageHandler = async (event) => {
   previewImageContainer.classList.add("saving");
   saveButton.disabled = true;
 
+  //----------> get access to the default file type
+  const fileType = imageToCrop.type;
+
+
   setTimeout(() => {
     //----------> get the cropped canvas and convert it to a data url in jpeg format
-    const croppedImage = cropper.getCroppedCanvas().toDataURL("image/jpeg");
+    const croppedImage = cropper.getCroppedCanvas().toDataURL(`${fileType}`);
 
     saveButton.disabled = false;
     //----------> configure the element
@@ -33,7 +37,8 @@ export const downloadCroppedImageHandler = (event) => {
   if (!croppedImagePreview.src) {
     return;
   }
+  const fileType = imageToCrop.type;
   downloadButton.href = croppedImagePreview.src;
-  downloadButton.download = "cropped.jpeg";
+  downloadButton.download = `cropped.${fileType.split("/")[1]}`;
   downloadButton.disabled = false;
 };

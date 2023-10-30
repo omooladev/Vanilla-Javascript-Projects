@@ -10,6 +10,8 @@ const transformImageHandler = async (event) => {
   setIsLoading(true);
   //----------> get the image file
   const image = event.target.files[0];
+
+  imageToCrop = image;
   //----------> validate image
   const validationResponse = await validateImage(image);
   if (validationResponse.hasError) {
